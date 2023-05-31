@@ -18,4 +18,12 @@ public class move : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Planet"))
+        {
+            collision.gameObject.GetComponent<Planet>().Hp -= rb.velocity.magnitude;
+            Destroy(gameObject);
+        }
+    }
 }
