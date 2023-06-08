@@ -10,7 +10,7 @@ public class move : MonoBehaviour
     void Start()
     {
         rb.GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.left * force);
+        //rb.AddForce(Vector3.left * force);
     }
 
     // Update is called once per frame
