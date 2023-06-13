@@ -5,12 +5,16 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     public Rigidbody rb;
-    public float force = 1.0f;
+    public float force;
+
+    float randomScale;
     // Start is called before the first frame update
     void Start()
     {
         rb.GetComponent<Rigidbody>();
-        //rb.AddForce(Vector3.left * force);
+        randomScale = Random.Range(0.5f, 2f);
+        transform.localScale *= randomScale;
+        rb.mass = 80 * randomScale * randomScale;
     }
 
     // Update is called once per frame
@@ -22,7 +26,7 @@ public class move : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Planet"))
         {
-            collision.gameObject.GetComponent<Planet>().Hp -= rb.velocity.magnitude;
+            collision.gameObject.GetComponent<Planet>().Hp -= randomScale * 10;
             Destroy(gameObject);
         }
     }

@@ -1300,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: emp 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1159102371030522049, guid: 8011f2e07398fe64fab32f3ecdc97553, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1972055311529673339, guid: 8011f2e07398fe64fab32f3ecdc97553, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6497,6 +6501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteor: {fileID: 2851088487539351657, guid: 4ee289f8e5b84e34db6096abfaa63939, type: 3}
+  force: 300
 --- !u!4 &1349312439
 Transform:
   m_ObjectHideFlags: 0
@@ -6629,7 +6634,7 @@ Transform:
   - {fileID: 387363276}
   - {fileID: 347593911}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1921755378
 GameObject:
