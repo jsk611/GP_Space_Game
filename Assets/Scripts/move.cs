@@ -22,6 +22,8 @@ public class move : MonoBehaviour
     {
         transform.Rotate(Vector3.up * Time.deltaTime * 50);
         transform.Rotate(Vector3.left * Time.deltaTime * 50);
+
+        if (Mathf.Abs(transform.position.y) > 15f) Destroy(gameObject);
     }
     private void OnCollisionEnter(Collision collision)
     {
