@@ -905,6 +905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  material: {fileID: 2100000, guid: e25bbc28593bf8749aaa990527d1b4a7, type: 2}
   hpBar: {fileID: 1921755380}
 --- !u!1 &629024774
 GameObject:
@@ -1027,7 +1028,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e25bbc28593bf8749aaa990527d1b4a7, type: 2}
+  - {fileID: 2100000, guid: 327ea1434d354e1428fdf65277f0eb6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1085,6 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  material: {fileID: 2100000, guid: 327ea1434d354e1428fdf65277f0eb6c, type: 2}
   hpBar: {fileID: 51992117}
 --- !u!1 &692482878
 GameObject:

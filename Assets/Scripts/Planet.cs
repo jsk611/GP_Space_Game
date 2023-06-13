@@ -7,6 +7,7 @@ public class Planet : MonoBehaviour
 {
     [SerializeField] float maxHp;
     float hp;
+    [SerializeField] Material material;
 
     [SerializeField] Image hpBar;
     public float Hp
@@ -35,6 +36,8 @@ public class Planet : MonoBehaviour
         transform.Rotate(Vector3.up * Time.deltaTime * 50);
 
         hpBar.fillAmount = hp / maxHp;
+
+        material.color = new Color(1, hp / maxHp, hp / maxHp);
     }
 
 }
