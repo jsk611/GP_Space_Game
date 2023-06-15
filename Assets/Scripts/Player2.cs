@@ -13,42 +13,42 @@ public class Player2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        h = 0; v = 0;
+        //h = 0; v = 0;
 
-        #region MovingKeySetting
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            h = 1;
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            h = -1;
-        }
-        if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow))
-        {
-            h = 0;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            v = 1;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            v = -1;
-        }
-        if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.DownArrow))
-        {
-            v = 0;
-        }
-        #endregion
+        //#region MovingKeySetting
+        //if (Input.GetKey(KeyCode.RightArrow))
+        //{
+        //    h = 1;
+        //}
+        //else if (Input.GetKey(KeyCode.LeftArrow))
+        //{
+        //    h = -1;
+        //}
+        //if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow))
+        //{
+        //    h = 0;
+        //}
+        //if (Input.GetKey(KeyCode.UpArrow))
+        //{
+        //    v = 1;
+        //}
+        //if (Input.GetKey(KeyCode.DownArrow))
+        //{
+        //    v = -1;
+        //}
+        //if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.DownArrow))
+        //{
+        //    v = 0;
+        //}
+        //#endregion
 
-        rb.AddForce(new Vector3(h, v, 0) * force);
+        //rb.AddForce(new Vector3(h, v, 0) * force);
 
         if (rb.velocity.x > 0) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         if (rb.velocity.x < 0) transform.localScale = new Vector3(0.5f, -0.5f, 1f);

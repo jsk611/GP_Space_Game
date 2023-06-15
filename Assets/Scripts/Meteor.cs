@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class move : MonoBehaviour
+public class Meteor : MonoBehaviour
 {
     public Rigidbody rb;
     public float force;
