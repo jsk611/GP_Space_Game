@@ -65,4 +65,20 @@ public class Player : MonoBehaviour
 
         rb.velocity = velocity;
     }
+
+    IEnumerator CoilEffect()
+    {
+        rb.mass = 100f;
+        yield return new WaitForSeconds(10f);
+        rb.mass = 50f;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Coil"))
+        {
+            StartCoroutine(CoilEffect());
+            Destroy(other.gameObject);
+        }
+    }
 }

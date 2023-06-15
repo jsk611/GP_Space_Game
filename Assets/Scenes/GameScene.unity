@@ -898,6 +898,7 @@ GameObject:
   - component: {fileID: 578872109}
   - component: {fileID: 578872108}
   - component: {fileID: 578872107}
+  - component: {fileID: 578872113}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -967,6 +968,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &578872113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578872106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c80ecebdf5c22746895190d4a326c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5000
 --- !u!1 &608527426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1957,8 @@ GameObject:
   - component: {fileID: 1585827313}
   - component: {fileID: 1585827312}
   - component: {fileID: 1585827311}
-  - component: {fileID: 1585827310}
+  - component: {fileID: 1585827315}
+  - component: {fileID: 1585827314}
   m_Layer: 0
   m_Name: Spaceship2
   m_TagString: Untagged
@@ -1951,21 +1966,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1585827310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585827309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5947c405c8a090442bda2ffa286dda9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 5000
-  maxSpeed: 7.5
-  rb: {fileID: 1585827311}
 --- !u!54 &1585827311
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2013,6 +2013,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1585827314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585827309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069cf802d38485f45ab94037aa5b6ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5000
+--- !u!114 &1585827315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585827309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93b42d7795c1c442a33157f7093761b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  maxSpeed: 7.5
+  rb: {fileID: 0}
 --- !u!1 &1921755378
 GameObject:
   m_ObjectHideFlags: 0
