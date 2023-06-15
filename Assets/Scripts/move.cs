@@ -33,7 +33,7 @@ public class move : MonoBehaviour
         {
             collision.gameObject.GetComponent<Planet>().Hp -= randomScale * 10;
             Transform t = Instantiate(explosion).GetComponentsInChildren<Transform>()[1];
-            t.localScale *= randomScale*2;
+            t.localScale *= randomScale*1.5f;
             t.position = transform.position;
             Destroy(gameObject);
         }
