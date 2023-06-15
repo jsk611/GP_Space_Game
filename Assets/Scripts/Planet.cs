@@ -27,6 +27,7 @@ public class Planet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        material.color = Color.white;
         Hp = maxHp;
     }
 
