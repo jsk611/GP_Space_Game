@@ -8,6 +8,8 @@ public class move : MonoBehaviour
     public float force;
 
     float randomScale;
+
+    [SerializeField] GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,9 @@ public class move : MonoBehaviour
         if (collision.gameObject.CompareTag("Planet"))
         {
             collision.gameObject.GetComponent<Planet>().Hp -= randomScale * 10;
+            Transform t = Instantiate(explosion).GetComponentsInChildren<Transform>()[1];
+            t.localScale *= randomScale*2;
+            t.position = transform.position;
             Destroy(gameObject);
         }
     }
