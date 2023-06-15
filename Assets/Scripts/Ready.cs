@@ -1,22 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ready : MonoBehaviour
 {
-    public GameObject btn, rbtn1, rbtn2;
-    bool ready1;
-    bool ready2;
+    public GameObject btn, rb1, rb2;
+    Toggle t1, t2;
     void Start()
     {
-        rbtn1 = GameObject.Find("P1 ready");
-        rbtn2 = GameObject.Find("P2 ready");
+        t1 = rb1.GetComponent<Toggle>();
+        t2 = rb2.GetComponent<Toggle>();
     }
     void Update()
     {
-        ready1 = rbtn1.GetComponent<Toggle>().ready1;
-        ready2 = rbtn2.GetComponent<Toggle>().ready2;
-        if(ready1 == true && ready2 == true) btn.SetActive(true);
+        if(t1.isOn == true && t2.isOn == true) btn.SetActive(true);
         else btn.SetActive(false);
     }
 }
