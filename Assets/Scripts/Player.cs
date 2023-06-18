@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float maxSpeed;
     public Rigidbody rb;
 
+    [SerializeField] Player1Move p1m;
+    [SerializeField] Player2Move p2m;
     float h = 0;
     float v = 0;
     // Start is called before the first frame update
@@ -69,8 +71,12 @@ public class Player : MonoBehaviour
     IEnumerator CoilEffect()
     {
         rb.mass = 100f;
+        if (p1m != null) p1m.force = 8000f;
+        if (p2m != null) p2m.force = 8000f;
         yield return new WaitForSeconds(10f);
         rb.mass = 50f;
+        if (p1m != null) p1m.force = 4000f;
+        if (p2m != null) p2m.force = 4000f;
     }
 
     private void OnTriggerEnter(Collider other)
