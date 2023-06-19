@@ -24,14 +24,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(p1.Hp <= 0)
+        Debug.LogWarning(p1.Hp);
+        if(p1.Hp <= 0.1f)
         {
+            Debug.Log("게임끝");
             winner = Nickname.nickname2;
             loser = Nickname.nickname1;
             SceneManager.LoadScene("ResultScene");
         }
-        else if (p1.Hp <= 0)
+        else if (p2.Hp <= 0.1f)
         {
+            Debug.Log("게임끝");
             loser = Nickname.nickname2;
             winner = Nickname.nickname1;
             SceneManager.LoadScene("ResultScene");

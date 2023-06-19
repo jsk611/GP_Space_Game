@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemRandomResponer : MonoBehaviour
 {
-    public GameObject item1;
+    public GameObject[] items;
     void Start()
     {
         StartCoroutine(RandomRespawn_Coroutine());
@@ -12,18 +12,20 @@ public class ItemRandomResponer : MonoBehaviour
 
     Vector3 Return_RandomPosition() 
     {
-        float rangeX = Random.Range(-10, 11);
-        float rangeY = Random.Range(-10, 11);
+        float rangeX = Random.Range(-10f, 10f);
+        float rangeY = Random.Range(-7.5f, 7.5f);
         Vector3 RandomPosition = new Vector3(rangeX, rangeY, 0);
         return RandomPosition;
     }
 
     IEnumerator RandomRespawn_Coroutine()
     {
+        float t = 10f;
         while (true)
         {
-            yield return new WaitForSeconds(1f);
-            GameObject item = Instantiate(item1, Return_RandomPosition(), Quaternion.identity);
+            yield return new WaitForSeconds(t);
+            GameObject item = Instantiate(items[Random.Range(0,2)], Return_RandomPosition(), Quaternion.identity);
+            t = t < 3f ? 3 : t - 1f;
         }
     }
 }

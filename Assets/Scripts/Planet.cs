@@ -21,6 +21,8 @@ public class Planet : MonoBehaviour
             hp = value;
             if (hp >= maxHp) hp = maxHp;
             if (hp <= 0) hp = 0;
+
+            Debug.Log("Ã¼·Â : " + hp.ToString());
         }
 
     }
