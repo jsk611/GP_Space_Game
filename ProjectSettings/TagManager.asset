@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Planet
   - Coil
+  - Meteor
+  - Missile
   layers:
   - Default
   - TransparentFX
