@@ -396,7 +396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &156184306
 GameObject:
@@ -921,6 +921,8 @@ MonoBehaviour:
   force: 5000
   maxSpeed: 7.5
   rb: {fileID: 578872108}
+  p1m: {fileID: 578872113}
+  p2m: {fileID: 0}
 --- !u!54 &578872108
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -980,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c80ecebdf5c22746895190d4a326c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5000
+  force: 4000
 --- !u!1 &608527426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,7 +1260,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &678594877
 MonoBehaviour:
@@ -1892,6 +1894,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nick1: {fileID: 156184308}
   nick2: {fileID: 320526945}
+  p1: {fileID: 0}
+  p2: {fileID: 0}
 --- !u!4 &1384899999
 Transform:
   m_ObjectHideFlags: 0
@@ -2025,7 +2029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069cf802d38485f45ab94037aa5b6ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5000
+  force: 4000
 --- !u!114 &1585827315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,6 +2045,8 @@ MonoBehaviour:
   force: 0
   maxSpeed: 7.5
   rb: {fileID: 0}
+  p1m: {fileID: 0}
+  p2m: {fileID: 1585827314}
 --- !u!1 &1921755378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,7 +2399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2851088487539351660, guid: 4ee289f8e5b84e34db6096abfaa63939, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2851088487539351660, guid: 4ee289f8e5b84e34db6096abfaa63939, type: 3}
       propertyPath: m_LocalPosition.x
