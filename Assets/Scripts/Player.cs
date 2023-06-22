@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] Image mf;
     bool hasCoil;
     [SerializeField] GameObject nuclear;
+    [SerializeField] GameObject empParticle;
+    bool isDamagedEmp;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class Player : MonoBehaviour
     {
         if (rb.velocity.x > 0) transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         if (rb.velocity.x < 0) transform.localScale = new Vector3(0.5f, -0.5f, 1f);
+
+        if (isDamagedEmp) StartCoroutine(DamagedEMP());
     }
 
     private void FixedUpdate()
@@ -63,6 +67,16 @@ public class Player : MonoBehaviour
         hasCoil = false;
     }
 
+    IEnumerator DamagedEMP()
+    {
+        isDamagedEmp = false;
+        maxSpeed /= 5f;
+        empParticle.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        empParticle.SetActive(false);
+        maxSpeed *= 5f;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Coil"))
@@ -86,6 +100,20 @@ public class Player : MonoBehaviour
             {
                 Nuclear n = Instantiate(nuclear, new Vector3(19f, Random.Range(-7.5f, 7.5f), 0), Quaternion.identity).GetComponent<Nuclear>();
                 n.target = 1;
+            }
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("EMP"))
+        {
+            if (p2m == null)//자신이 플레이어 1일때
+            {
+                FindObjectOfType<Player2Move>().gameObject.GetComponent<Player>().isDamagedEmp = true;
+            }
+
+            else if (p1m == null)//자신이 플레이어 2일때
+            {
+                FindObjectOfType<Player1Move>().gameObject.GetComponent<Player>().isDamagedEmp = true;
             }
             Destroy(other.gameObject);
         }

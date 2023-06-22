@@ -7,6 +7,7 @@ public class Nuclear : MonoBehaviour
     public int target;
     [SerializeField] float speed;
     [SerializeField] GameObject explosion;
+    [SerializeField] GameObject explosion2;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +42,7 @@ public class Nuclear : MonoBehaviour
 
         if (other.gameObject.CompareTag("Meteor"))
         {
-
+            Instantiate(explosion2, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

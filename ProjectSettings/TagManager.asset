@@ -8,6 +8,7 @@ TagManager:
   - Coil
   - Meteor
   - Missile
+  - EMP
   layers:
   - Default
   - TransparentFX

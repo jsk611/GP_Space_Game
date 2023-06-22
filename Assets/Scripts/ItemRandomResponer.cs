@@ -24,7 +24,7 @@ public class ItemRandomResponer : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(t);
-            GameObject item = Instantiate(items[Random.Range(0,2)], Return_RandomPosition(), Quaternion.identity);
+            GameObject item = Instantiate(items[Random.Range(0,3)], Return_RandomPosition(), Quaternion.identity);
             t = t < 3f ? 3 : t - 1f;
         }
     }
