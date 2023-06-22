@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(p1.Hp);
         if(p1.Hp <= 0.1f)
         {
             Debug.Log("°ÔÀÓ³¡");
