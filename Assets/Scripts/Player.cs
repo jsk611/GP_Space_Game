@@ -50,13 +50,13 @@ public class Player : MonoBehaviour
     {
         hasCoil = true;
 
-        rb.mass = 100f;
+        rb.mass = 150f;
         mf.color = new Color(1, 0.75f, 0, 40f/255);
 
-        if (p1m != null) p1m.force = 8000f;
-        if (p2m != null) p2m.force = 8000f;
+        if (p1m != null) p1m.force = 15000f;
+        if (p2m != null) p2m.force = 15000f;
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
 
         rb.mass = 50f;
         mf.color = new Color(140f/255,140f/255,140f/255, 40f / 255);

@@ -949,6 +949,7 @@ GameObject:
   - component: {fileID: 792419071}
   - component: {fileID: 792419073}
   - component: {fileID: 792419072}
+  - component: {fileID: 792419074}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -989,7 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5372549, g: 1, b: 0.7294118, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -997,19 +998,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 60
+    m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2.725K
+  m_Text: PlanetWars
 --- !u!222 &792419073
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1018,6 +1019,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792419070}
   m_CullTransparentMesh: 1
+--- !u!114 &792419074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792419070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.56078434, g: 1, b: 0.7294118, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &877785957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1084,9 @@ MonoBehaviour:
   rb: {fileID: 0}
   p1m: {fileID: 0}
   p2m: {fileID: 0}
+  mf: {fileID: 0}
+  nuclear: {fileID: 0}
+  empParticle: {fileID: 0}
 --- !u!54 &877785960
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1780,6 +1799,9 @@ MonoBehaviour:
   rb: {fileID: 1286676823}
   p1m: {fileID: 0}
   p2m: {fileID: 0}
+  mf: {fileID: 0}
+  nuclear: {fileID: 0}
+  empParticle: {fileID: 0}
 --- !u!54 &1286676823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3122,7 +3144,7 @@ RectTransform:
   - {fileID: 1483054330}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 57.774, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

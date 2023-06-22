@@ -27,15 +27,15 @@ public class GameManager : MonoBehaviour
         if(p1.Hp <= 0.1f)
         {
             Debug.Log("게임끝");
-            winner = Nickname.nickname2;
-            loser = Nickname.nickname1;
+            winner = nick2.text;
+            loser = nick1.text;
             SceneManager.LoadScene("ResultScene");
         }
         else if (p2.Hp <= 0.1f)
         {
             Debug.Log("게임끝");
-            loser = Nickname.nickname2;
-            winner = Nickname.nickname1;
+            loser = nick2.text;
+            winner = nick1.text;
             SceneManager.LoadScene("ResultScene");
         }
     }

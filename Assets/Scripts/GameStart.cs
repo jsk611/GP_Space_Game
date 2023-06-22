@@ -10,8 +10,8 @@ public class GameStart : MonoBehaviour
     [SerializeField] Text nick2;
 
     public void SceneChange() {
-        Nickname.nickname1 = nick1.text;
-        Nickname.nickname2 = nick2.text;
+        Nickname.nickname1 = nick1.text == null ? "Player1" : nick1.text;
+        Nickname.nickname2 = nick2.text == null ? "Player2" : nick2.text;
 
         SceneManager.LoadScene("GameScene");
     }
