@@ -10,6 +10,7 @@ public class ResultManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1920/2, 1080/2, false);
         winnerText.text = GameManager.winner;
         loserText.text = GameManager.loser + "¿« «‡º∫¿Ã ∏Í∏¡«ﬂΩ¿¥œ¥Ÿ.";
     }

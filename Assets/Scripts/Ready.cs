@@ -9,6 +9,7 @@ public class Ready : MonoBehaviour
     Toggle t1, t2;
     void Start()
     {
+        Screen.SetResolution(1920 / 2, 1080 / 2, false);
         t1 = rb1.GetComponent<Toggle>();
         t2 = rb2.GetComponent<Toggle>();
     }

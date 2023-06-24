@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         nick1.text = Nickname.nickname1 == "" ? "Player 1" : Nickname.nickname1;
         nick2.text = Nickname.nickname2 == "" ? "Player 2" : Nickname.nickname2;
+        Screen.SetResolution(1920, 1080, true);
     }
 
     // Update is called once per frame
