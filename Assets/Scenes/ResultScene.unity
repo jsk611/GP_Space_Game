@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 337336772}
   - component: {fileID: 337336771}
   - component: {fileID: 337336773}
+  - component: {fileID: 337336774}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -322,6 +323,26 @@ MonoBehaviour:
   m_EffectColor: {r: 0.5568628, g: 0.99607843, b: 0.7254902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!95 &337336774
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337336769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aed1e71c14983c6418624a0309ae6a40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &411120898
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +423,7 @@ GameObject:
   - component: {fileID: 569133408}
   - component: {fileID: 569133407}
   - component: {fileID: 569133409}
+  - component: {fileID: 569133410}
   m_Layer: 5
   m_Name: Text2
   m_TagString: Untagged
@@ -486,6 +508,26 @@ MonoBehaviour:
   m_EffectColor: {r: 0.5568628, g: 0.99607843, b: 0.7254902, a: 1}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!95 &569133410
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569133405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aed1e71c14983c6418624a0309ae6a40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &676641827
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +925,7 @@ GameObject:
   - component: {fileID: 877816986}
   - component: {fileID: 877816985}
   - component: {fileID: 877816987}
+  - component: {fileID: 877816988}
   m_Layer: 5
   m_Name: Winner Name
   m_TagString: Untagged
@@ -967,6 +1010,26 @@ MonoBehaviour:
   m_EffectColor: {r: 0.5568628, g: 0.99607843, b: 0.7254902, a: 1}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!95 &877816988
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877816983}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aed1e71c14983c6418624a0309ae6a40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1078275004
 GameObject:
   m_ObjectHideFlags: 0

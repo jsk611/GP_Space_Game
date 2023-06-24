@@ -48,10 +48,10 @@ public class Nuclear : MonoBehaviour
         }
     }
 
-    float GetAngle(Vector2 start, Vector2 end)
+    float GetAngle(Vector3 start, Vector3 end)
     {
-        Vector2 v2 = end - start;
-        return Mathf.Atan2(v2.y, v2.x) * Mathf.Rad2Deg;
+        Vector3 v3 = end - start;
+        return Mathf.Atan2(v3.y, v3.x) * Mathf.Rad2Deg;
     }
 
 }
