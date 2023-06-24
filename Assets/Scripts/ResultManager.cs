@@ -11,7 +11,7 @@ public class ResultManager : MonoBehaviour
     void Start()
     {
         winnerText.text = GameManager.winner;
-        loserText.text = "당신으로 인해 " + GameManager.loser + "의 행성이 멸망했습니다.";
+        loserText.text = GameManager.loser + "의 행성이 멸망했습니다.";
     }
 
 }

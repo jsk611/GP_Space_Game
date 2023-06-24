@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.03908425, g: 0.014048863, b: 0.028387379, a: 1}
+  m_IndirectSpecularColor: {r: 0.039163444, g: 0.014079476, b: 0.028447066, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -469,7 +469,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PlayerPlayerPlayerPlayer
+  m_Text: Player1
 --- !u!222 &156184309
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -643,7 +643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PlayerPlayerPlayerPlayer
+  m_Text: Player2
 --- !u!222 &320526946
 CanvasRenderer:
   m_ObjectHideFlags: 0

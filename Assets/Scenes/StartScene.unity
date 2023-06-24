@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03908425, g: 0.014048863, b: 0.028387379, a: 1}
+  m_IndirectSpecularColor: {r: 0.039163444, g: 0.014079476, b: 0.028447066, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,7 +234,7 @@ RectTransform:
   m_Children:
   - {fileID: 1336379940}
   m_Father: {fileID: 1922480836}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1356,8 +1356,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -1368,7 +1368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC2DC\uC791"
+  m_Text: Start
 --- !u!222 &1142760052
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1908,8 +1908,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -1920,7 +1920,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB098\uAC00\uB2E4"
+  m_Text: Exit
 --- !u!222 &1336379942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2177,7 +2177,7 @@ RectTransform:
   m_Children:
   - {fileID: 1142760050}
   m_Father: {fileID: 1922480836}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2914,9 +2914,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
     m_FontSize: 23
-    m_FontStyle: 2
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -3140,8 +3140,8 @@ RectTransform:
   - {fileID: 792419071}
   - {fileID: 1569671483}
   - {fileID: 1167409192}
-  - {fileID: 131199325}
   - {fileID: 1483054330}
+  - {fileID: 131199325}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 57.774, y: 0, z: 0}
@@ -3337,9 +3337,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
     m_FontSize: 23
-    m_FontStyle: 2
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
