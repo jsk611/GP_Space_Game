@@ -127,7 +127,7 @@ Library: lib_burst_generated
 --compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
---linker-options=PdbAltPath="Space Project_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Shooting Stars_Data/Plugins/x86_64"
 --generate-link-xml=Temp\burst.link.xml
 --output=D:\Unity Project\GP_Space_Game\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=D:\Unity Project\GP_Space_Game\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
@@ -288,7 +288,7 @@ Library: lib_burst_generated
 --compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
---linker-options=PdbAltPath="Space Project_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Shooting Stars_Data/Plugins/x86_64"
 --generate-link-xml=Temp\burst.link.xml
 --output=D:\Unity Project\GP_Space_Game\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=D:\Unity Project\GP_Space_Game\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
