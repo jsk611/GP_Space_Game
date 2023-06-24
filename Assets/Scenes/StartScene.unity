@@ -934,6 +934,7 @@ GameObject:
   - component: {fileID: 792419073}
   - component: {fileID: 792419072}
   - component: {fileID: 792419074}
+  - component: {fileID: 792419075}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -983,7 +984,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fbb88449f438fc041ae41e2af7298298, type: 3}
-    m_FontSize: 80
+    m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -994,7 +995,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PlanetWars
+  m_Text: SHOOTING STARS
 --- !u!222 &792419073
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1015,9 +1016,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.56078434, g: 1, b: 0.7294118, a: 1}
+  m_EffectColor: {r: 0.5, g: 1, b: 0.7, a: 1}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
+--- !u!95 &792419075
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792419070}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aed1e71c14983c6418624a0309ae6a40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &877785957
 GameObject:
   m_ObjectHideFlags: 0
