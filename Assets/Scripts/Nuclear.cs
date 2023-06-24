@@ -36,7 +36,7 @@ public class Nuclear : MonoBehaviour
         {
             Instantiate(explosion, transform.position, Quaternion.Euler(0, 0, GetAngle(other.transform.position, transform.position) - 90f));
 
-            other.GetComponent<Planet>().Hp -= 15f;
+            other.GetComponent<Planet>().Hp -= 10f;
             Destroy(gameObject);
         }
 
