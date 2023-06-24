@@ -46,6 +46,6 @@ public class Player2Move : MonoBehaviour
         }
         #endregion
 
-        rb.AddForce(new Vector3(h, v, 0) * force);
+        rb.AddForce(new Vector3(h, v, 0) * force * Time.deltaTime * 60f);
     }
 }
